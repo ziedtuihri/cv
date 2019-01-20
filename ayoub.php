@@ -285,12 +285,10 @@ function afficher_span(t,n){
 		document.getElementById('monspan' + n).style.display = '';
 		if(!t==""){
 $(document).ready(function(){
-        // Get value from input element on the page$(this).serialize()
+        // $(this).serialize()
         var numValue = $("#moninput"+n).val();
 		var name="T"+n;
-        // Send the input data to the server using get
         $.post("fich1.php", {ch: numValue,x:name} , function(data){
-            // Display the returned data in browser
              window.location.reload();
         });
 });
