@@ -3,6 +3,9 @@
 <?php include_once("fich1.php");
  ?>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" media="all" type="text/css" href="c1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -283,7 +286,7 @@ function afficher_span(t,n){
 	document.getElementById('moninput'+n).style.background = "red"; 
 		document.getElementById('moninput'+n).style.display = "none";
 		document.getElementById('monspan' + n).style.display = '';
-		if(!t==""){
+		if(!(t=="")){
 $(document).ready(function(){
         // $(this).serialize() 
         var numValue = $("#moninput"+n).val();

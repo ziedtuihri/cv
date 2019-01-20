@@ -8,6 +8,5 @@ if(isset($_POST["ch"]) && isset($_POST["x"])){
 		$json = json_encode($json);
 		$test=file_put_contents('info.json',$json);
 		$json=json_decode($test,true);
-		
 }
 ?>
