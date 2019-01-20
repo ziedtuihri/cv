@@ -285,7 +285,7 @@ function afficher_span(t,n){
 		document.getElementById('monspan' + n).style.display = '';
 		if(!t==""){
 $(document).ready(function(){
-        // $(this).serialize()
+        // $(this).serialize() 
         var numValue = $("#moninput"+n).val();
 		var name="T"+n;
         $.post("fich1.php", {ch: numValue,x:name} , function(data){
