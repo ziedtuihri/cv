@@ -1,0 +1,15 @@
+.w3-black, .w3-hover-black:hover {
+    color: #050505 !important;
+    background-color: #f00 !important;
+}
+.w3-teal, .w3-hover-teal:hover {
+    color: #000 !important;
+    background-color: #009688 !important;
+}
+.w3-xlarge {
+    font-size: 20px !important;
+}
+w3-btn, .w3-button {
+    padding: 1px 8px;
+	margin: 5px;
+}
