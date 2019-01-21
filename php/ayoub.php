@@ -5,11 +5,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" media="all" type="text/css" href="c1.css">
+<link rel="stylesheet" media="all" type="text/css" href="cv\cv\cssc1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Sakly Ayoub</title>
+        <title><?php
+        echo $json[0]['T1'] ;?></title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="http://saklyayoub.tn/xmlrpc.php" />
         <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
@@ -171,28 +172,23 @@
             .section_header.video .section_title strong span.section_name,
             .section_header.video .section_title strong span.icon {
                 background-color: #980101;
-            }
-            
+            }           
             .section_header.link .section_title strong span.section_name,
             .section_header.link .section_title strong span.icon {
                 background-color: #815b97;
-            }
-            
+            }           
             .section_header.quote .section_title strong span.section_name,
             .section_header.quote .section_title strong span.icon {
                 background-color: #33cccc;
-            }
-            
+            }           
             .section_header.quote .section_title strong span.section_name,
             .section_header.quote .section_title strong span.icon {
                 background-color: #33cccc;
-            }
-            
+            }           
             #scrollTo,
             #scrollTo .icon {
                 background-color: #815b97;
-            }
-            
+            }            
             body,
             button,
             input,
@@ -229,10 +225,8 @@
             }
         </style>
     </head>
-
     <body class="home blog dark">
         <!--[if lt IE 8]>
-
 		<div class="sc_infobox sc_infobox_style_error">
 			It looks like you're using an old version of Internet Explorer. For the best WordPress experience, please <a href="http://microsoft.com">update your browser</a> or learn how to <a href="http://browsehappy.com">browse happy</a>!
 		</div>
@@ -253,21 +247,19 @@
                         <li class="fb"><a target="_blank" href="https://www.facebook.com/saklyayoub">Facebook</a></li>
                         <li class="lnkd"><a target="_blank" href="https://www.linkedin.com/in/sakly-ayoub-ba269391">Linkedin</a></li>
                         <li class="skp"><a target="_blank" href="skype:saklyayoub@live.com" class="skp">Skype</a></li>
-
                     </ul>
                 </div>
             </header>
-<form id="form" action="ayoub.php" method="POST"><!-- debut du formulaire   -->
+<!--form -->  <form id="form" action="ayoub.php" method="POST" enctype="multipart/form-data">
             <div id="main">
                 <div id="primary" class="content_area">
                     <div id="content" class="site_content" role="main">
-
                         <section id="profile" class="section profile_section first odd">
                             <div class="section_header profile_section_header opened">
                                 <h2 class="section_title profile_section_title vis"><a href="#"><span class="icon icon-user"></span><span class="section_name ">Profil</span></a><span class="section_icon"></span></h2>
                                 <div id="profile_header">
                                     <div id="profile_user">
-                                        <div id="profile_photo"><img src="http://saklyayoub.tn/wp-content/uploads/2017/03/14359193_10209321759713796_5052728224339448616_n-117x117.jpg" alt="Sakly Ayoub" /></div>
+                                        <div id="profile_photo"><img src="<?php  echo $json[0]['T9'] ;?>" alt="Sakly Ayoub" /></div>
                                         <div id="profile_name_area">
                                             <div id="profile_name">
                                                 <h1 id="profile_title"><span class="firstname"><?php 
@@ -275,7 +267,7 @@
                                                                             </span> <span class="lastname"></span></span></h1><h4 id="profile_position">
 																			<input type="text" id="moninput7" name="json" value="" onblur="afficher_span(this.value, 7);" style="display:none;"/>
 																			<span id="monspan7" onclick="afficher_input(this, 7);"><?php 
-                                                                             echo $json[0]['T7'] ;?></span></h4>
+                                                                             echo $json[0]['T7'] ;?> </span></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -283,7 +275,6 @@
                                         <div class="profile_row" >
 <script type="text/javascript">
 function afficher_span(t,n){
-	document.getElementById('moninput'+n).style.background = "red"; 
 		document.getElementById('moninput'+n).style.display = "none";
 		document.getElementById('monspan' + n).style.display = '';
 		if(!(t=="")){
@@ -365,7 +356,10 @@ echo $json[0]['T8'] ;
                                 <div class="section_body resume_section_body">
                                     <div class="sidebar resume_sidebar">
                                         <aside id="skills-widget-5" class="widget widget_skills">
-                                            <h3 class="widget_title">CONCEPTION</h3>
+                                            <h3 class="widget_title">CONCEPTION     <span>
+<!--bton -->							<button class="w3-button w3-xlarge w3-black">+</button>
+											<button class="w3-button w3-xlarge w3-teal">-</button></span>
+											</h3>
                                             <div class="widget_inner style_1">
                                                 <div class="skills_row odd first"><span class="caption">UML</span><span class="progressbar"><span class="progress" style="background-color:#39D5FF;" rel="90%"><span class="value">90%</span></span>
                                                     </span>
